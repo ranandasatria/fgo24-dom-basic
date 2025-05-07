@@ -1,21 +1,19 @@
+const celcius = parseFloat(document.getElementById('celcius').textContent);
 
 function celciusToFahrenheit(celcius) {
     return (celcius * 9 / 5) + 32;
-  }
+}
 
-//   document.querySelector('#celcius')
+fahrenheitResult.textContent = celciusToFahrenheit(celcius);
 
-fahrenheitResult.textContent = celciusToFahrenheit(150)
-
-  
 function celciusToReamur(celcius) {
-    return (4/5 * celcius);
-  }
+    return (4 / 5 * celcius);
+}
 
-reamurResult.textContent = celciusToReamur(150)
+reamurResult.textContent = celciusToReamur(celcius);
 
 function celciusToKelvin(celcius) {
-    return (celcius + 273);
-  }
+    return celcius + 273;
+}
 
-kelvinResult.textContent = celciusToKelvin(150)
+kelvinResult.textContent = celciusToKelvin(celcius);
