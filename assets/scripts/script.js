@@ -1,4 +1,8 @@
-const celcius = parseFloat(document.getElementById('celcius').textContent);
+const celcius = (document.getElementById('celcius').textContent);
+const fahrenheitResult = document.getElementById('fahrenheitResult');
+const reamurResult = document.getElementById('reamurResult');
+const kelvinResult = document.getElementById('kelvinResult');
+
 
 function celciusToFahrenheit(celcius) {
     return (celcius * 9 / 5) + 32;
